@@ -1,0 +1,111 @@
+{
+  "expected_runs": 1000,
+  "successful_runs": 1000,
+  "failed_runs": 0,
+  "complete_seeds": 100,
+  "inference": "Bootstrap of complete environment-seed means; capped lifetime",
+  "metrics": {
+    "active_rest_steps": {
+      "mean_all_successful": 154.229,
+      "mean_complete_seeds": 154.22900000000004,
+      "median_all_successful": 116.5,
+      "sd_all_successful": 126.01304633587289,
+      "ci95_complete_seeds": [
+        142.24530000000001,
+        166.09400000000002
+      ]
+    },
+    "danger_contacts": {
+      "mean_all_successful": 2.835,
+      "mean_complete_seeds": 2.835,
+      "median_all_successful": 3.0,
+      "sd_all_successful": 1.8113685588681439,
+      "ci95_complete_seeds": [
+        2.694,
+        2.9829999999999997
+      ]
+    },
+    "final_energy": {
+      "mean_all_successful": 0.02558799999999999,
+      "mean_complete_seeds": 0.02558799999999999,
+      "median_all_successful": 0.0,
+      "sd_all_successful": 0.14135137235437956,
+      "ci95_complete_seeds": [
+        0.017539949999999988,
+        0.03416449999999998
+      ]
+    },
+    "food_collected": {
+      "mean_all_successful": 5.034,
+      "mean_complete_seeds": 5.034,
+      "median_all_successful": 3.0,
+      "sd_all_successful": 5.108712454517571,
+      "ci95_complete_seeds": [
+        4.594,
+        5.485
+      ]
+    },
+    "rest_steps": {
+      "mean_all_successful": 193.605,
+      "mean_complete_seeds": 193.605,
+      "median_all_successful": 149.0,
+      "sd_all_successful": 145.17391101516637,
+      "ci95_complete_seeds": [
+        180.0579,
+        207.12327499999998
+      ]
+    },
+    "silent_steps": {
+      "mean_all_successful": 39.376,
+      "mean_complete_seeds": 39.376,
+      "median_all_successful": 32.0,
+      "sd_all_successful": 29.93112922187361,
+      "ci95_complete_seeds": [
+        36.623975,
+        42.18129999999999
+      ]
+    },
+    "steps": {
+      "mean_all_successful": 352.746,
+      "mean_complete_seeds": 352.746,
+      "median_all_successful": 275.5,
+      "sd_all_successful": 254.03094142880155,
+      "ci95_complete_seeds": [
+        329.34987499999994,
+        375.36157499999996
+      ]
+    },
+    "total_reward": {
+      "mean_all_successful": 5.642481879999998,
+      "mean_complete_seeds": 5.642481879999999,
+      "median_all_successful": 3.8813199999999997,
+      "sd_all_successful": 5.762457917764542,
+      "ci95_complete_seeds": [
+        5.113519699999999,
+        6.173044961999998
+      ]
+    },
+    "unique_cells": {
+      "mean_all_successful": 53.398,
+      "mean_complete_seeds": 53.397999999999996,
+      "median_all_successful": 48.0,
+      "sd_all_successful": 31.64273785339788,
+      "ci95_complete_seeds": [
+        50.37395,
+        56.334175
+      ]
+    },
+    "wall_bumps": {
+      "mean_all_successful": 0.267,
+      "mean_complete_seeds": 0.267,
+      "median_all_successful": 0.0,
+      "sd_all_successful": 0.584853018332857,
+      "ci95_complete_seeds": [
+        0.22700000000000004,
+        0.309
+      ]
+    }
+  },
+  "censored_runs": 39,
+  "reached_horizon_fraction": 0.039
+}

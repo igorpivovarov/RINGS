@@ -1,0 +1,1327 @@
+{
+  "best_params": {
+    "ring_size": 8,
+    "snn_step_ms": 20,
+    "w_ring": 6.440424105354312,
+    "w_support": 1.1340108864470484,
+    "w_cross_exc": 7.59348133110966,
+    "w_cross_inh": 6.400697679333669,
+    "w_input": 8.248686716526642,
+    "energy_low_threshold": 0.4323486187754894,
+    "danger_threshold": 0.1391373746098408,
+    "food_threshold": 0.12754515192258345,
+    "escape_activation_threshold": 0.047873131249697075,
+    "seeking_activation_threshold": 0.09840468393264666,
+    "input_rate_hz": 318.8997969783079
+  },
+  "best_metrics": {
+    "score": 125.0,
+    "mean_steps": 125.0,
+    "std_steps": 0.0,
+    "mean_reward": 0.23999999999999866,
+    "mean_food": 0.0,
+    "mean_danger": 0.0
+  },
+  "all_results": [
+    {
+      "trial": 1,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 20,
+        "w_ring": 7.1715292303274545,
+        "w_support": 0.6690024826938432,
+        "w_cross_exc": 6.92764575194785,
+        "w_cross_inh": 2.6589102935777778,
+        "w_input": 8.66230404722684,
+        "energy_low_threshold": 0.7138816252572409,
+        "danger_threshold": 0.09293963616713236,
+        "food_threshold": 0.03375155739026747,
+        "escape_activation_threshold": 0.06854410119190632,
+        "seeking_activation_threshold": 0.036472930013972754,
+        "input_rate_hz": 230.20945075827714
+      },
+      "metrics": {
+        "score": 46.66666666666667,
+        "mean_steps": 57.333333333333336,
+        "std_steps": 24.417662095749915,
+        "mean_reward": -1.6952533333333337,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 2,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 60,
+        "w_ring": 5.680910786323051,
+        "w_support": 1.2813363761245509,
+        "w_cross_exc": 5.764599334433536,
+        "w_cross_inh": 8.63396259719904,
+        "w_input": 8.61682358893999,
+        "energy_low_threshold": 0.508672189860312,
+        "danger_threshold": 0.24525102111858404,
+        "food_threshold": 0.027453228898841005,
+        "escape_activation_threshold": 0.13018558426681512,
+        "seeking_activation_threshold": 0.04185702149648439,
+        "input_rate_hz": 148.8510166714875
+      },
+      "metrics": {
+        "score": 57.99999999999999,
+        "mean_steps": 67.33333333333333,
+        "std_steps": 41.84362423223983,
+        "mean_reward": -1.356493333333334,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 3,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 60,
+        "w_ring": 6.696650032560639,
+        "w_support": 3.35644225692011,
+        "w_cross_exc": 3.0843582795436246,
+        "w_cross_inh": 6.071201145637263,
+        "w_input": 9.111307751409473,
+        "energy_low_threshold": 0.49895901709029244,
+        "danger_threshold": 0.15954889314191156,
+        "food_threshold": 0.030046235995731703,
+        "escape_activation_threshold": 0.018344163795272574,
+        "seeking_activation_threshold": 0.03265545841012592,
+        "input_rate_hz": 256.0799946363572
+      },
+      "metrics": {
+        "score": 74.66666666666666,
+        "mean_steps": 81.33333333333333,
+        "std_steps": 41.79579989531112,
+        "mean_reward": -0.9721333333333342,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 4,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 30,
+        "w_ring": 7.560810262118207,
+        "w_support": 3.7320448427360153,
+        "w_cross_exc": 4.169494135667398,
+        "w_cross_inh": 3.738986094002845,
+        "w_input": 5.438133996665146,
+        "energy_low_threshold": 0.6619318522336974,
+        "danger_threshold": 0.06637100215915398,
+        "food_threshold": 0.06803985896730005,
+        "escape_activation_threshold": 0.07931629033773577,
+        "seeking_activation_threshold": 0.047782325895421064,
+        "input_rate_hz": 209.76683808555865
+      },
+      "metrics": {
+        "score": 26.0,
+        "mean_steps": 39.333333333333336,
+        "std_steps": 10.656244908763853,
+        "mean_reward": -2.096,
+        "mean_food": 0.0,
+        "mean_danger": 3.3333333333333335
+      }
+    },
+    {
+      "trial": 5,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 15,
+        "w_ring": 5.649361780402292,
+        "w_support": 1.9634298762482951,
+        "w_cross_exc": 6.542845577391496,
+        "w_cross_inh": 3.0638917426235333,
+        "w_input": 7.911704803806445,
+        "energy_low_threshold": 0.36568290281897503,
+        "danger_threshold": 0.18364317130687907,
+        "food_threshold": 0.1423313385940501,
+        "escape_activation_threshold": 0.09022363163883373,
+        "seeking_activation_threshold": 0.1063025593013977,
+        "input_rate_hz": 182.74950256961935
+      },
+      "metrics": {
+        "score": 58.33333333333333,
+        "mean_steps": 66.33333333333333,
+        "std_steps": 4.714045207910316,
+        "mean_reward": -1.2790933333333336,
+        "mean_food": 0.0,
+        "mean_danger": 2.0
+      }
+    },
+    {
+      "trial": 6,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 60,
+        "w_ring": 7.731711374144432,
+        "w_support": 3.28912191537558,
+        "w_cross_exc": 2.412577696441163,
+        "w_cross_inh": 2.655171972608325,
+        "w_input": 6.159514217024942,
+        "energy_low_threshold": 0.6288168271307712,
+        "danger_threshold": 0.06299999514321897,
+        "food_threshold": 0.13698549354254247,
+        "escape_activation_threshold": 0.05334503271131246,
+        "seeking_activation_threshold": 0.073574085378949,
+        "input_rate_hz": 256.24743494678256
+      },
+      "metrics": {
+        "score": 52.0,
+        "mean_steps": 62.666666666666664,
+        "std_steps": 16.131404843417148,
+        "mean_reward": -1.4450000000000003,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 7,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 30,
+        "w_ring": 8.94145286919067,
+        "w_support": 3.604641022833321,
+        "w_cross_exc": 4.082031534130704,
+        "w_cross_inh": 8.584539966522655,
+        "w_input": 6.843712876322768,
+        "energy_low_threshold": 0.5943678173932307,
+        "danger_threshold": 0.1487385989113963,
+        "food_threshold": 0.05491324397114872,
+        "escape_activation_threshold": 0.05024046970984064,
+        "seeking_activation_threshold": 0.09121997175542736,
+        "input_rate_hz": 199.57953570924656
+      },
+      "metrics": {
+        "score": 54.333333333333336,
+        "mean_steps": 65.0,
+        "std_steps": 15.297058540778355,
+        "mean_reward": -1.4785866666666674,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 8,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 15,
+        "w_ring": 5.915014553595563,
+        "w_support": 1.9057548971700644,
+        "w_cross_exc": 3.667034784706704,
+        "w_cross_inh": 2.9584830011051806,
+        "w_input": 7.444173208712606,
+        "energy_low_threshold": 0.5700878211212785,
+        "danger_threshold": 0.1912793418993004,
+        "food_threshold": 0.17783473296018976,
+        "escape_activation_threshold": 0.10558122831424321,
+        "seeking_activation_threshold": 0.051848543028164155,
+        "input_rate_hz": 166.15030162173645
+      },
+      "metrics": {
+        "score": 69.0,
+        "mean_steps": 77.0,
+        "std_steps": 38.79003308411411,
+        "mean_reward": -1.0841866666666673,
+        "mean_food": 0.0,
+        "mean_danger": 2.0
+      }
+    },
+    {
+      "trial": 9,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 20,
+        "w_ring": 5.832141107140203,
+        "w_support": 2.8048083694031556,
+        "w_cross_exc": 2.0723783590627933,
+        "w_cross_inh": 7.817654930978004,
+        "w_input": 5.4587429918495785,
+        "energy_low_threshold": 0.46277228893069505,
+        "danger_threshold": 0.07913527849159613,
+        "food_threshold": 0.10553455396801659,
+        "escape_activation_threshold": 0.09537374093597956,
+        "seeking_activation_threshold": 0.04504728492230752,
+        "input_rate_hz": 145.0983024991954
+      },
+      "metrics": {
+        "score": 56.0,
+        "mean_steps": 64.0,
+        "std_steps": 24.097026095903757,
+        "mean_reward": -1.2592533333333338,
+        "mean_food": 0.0,
+        "mean_danger": 2.0
+      }
+    },
+    {
+      "trial": 10,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 60,
+        "w_ring": 8.602315550439808,
+        "w_support": 3.089246617175453,
+        "w_cross_exc": 4.739862333217248,
+        "w_cross_inh": 8.096856508104402,
+        "w_input": 11.615089766652178,
+        "energy_low_threshold": 0.622230040424684,
+        "danger_threshold": 0.16185434817132188,
+        "food_threshold": 0.08369114088890413,
+        "escape_activation_threshold": 0.06517680223655098,
+        "seeking_activation_threshold": 0.06296750999817141,
+        "input_rate_hz": 200.08852610326977
+      },
+      "metrics": {
+        "score": 61.66666666666667,
+        "mean_steps": 69.66666666666667,
+        "std_steps": 39.66806720216597,
+        "mean_reward": -1.1464000000000005,
+        "mean_food": 0.0,
+        "mean_danger": 2.0
+      }
+    },
+    {
+      "trial": 11,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 15,
+        "w_ring": 10.415671804161352,
+        "w_support": 2.0421940391366267,
+        "w_cross_exc": 2.659569830002799,
+        "w_cross_inh": 6.205090823531369,
+        "w_input": 4.819036781801777,
+        "energy_low_threshold": 0.5767134432532338,
+        "danger_threshold": 0.15732373759368712,
+        "food_threshold": 0.17183180137110937,
+        "escape_activation_threshold": 0.09592321681656034,
+        "seeking_activation_threshold": 0.01773471337688387,
+        "input_rate_hz": 161.59053655575065
+      },
+      "metrics": {
+        "score": 81.33333333333334,
+        "mean_steps": 86.66666666666667,
+        "std_steps": 27.353650985238193,
+        "mean_reward": -0.8160133333333341,
+        "mean_food": 0.0,
+        "mean_danger": 1.3333333333333333
+      }
+    },
+    {
+      "trial": 12,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 20,
+        "w_ring": 8.489252681936454,
+        "w_support": 3.8441380837251495,
+        "w_cross_exc": 5.61367513377205,
+        "w_cross_inh": 5.319060242622313,
+        "w_input": 4.922828128870542,
+        "energy_low_threshold": 0.5452272236141643,
+        "danger_threshold": 0.24556460002957203,
+        "food_threshold": 0.09686321673850376,
+        "escape_activation_threshold": 0.053659323990522714,
+        "seeking_activation_threshold": 0.025852923924033613,
+        "input_rate_hz": 269.93478408848614
+      },
+      "metrics": {
+        "score": 35.333333333333336,
+        "mean_steps": 47.333333333333336,
+        "std_steps": 6.548960901462833,
+        "mean_reward": -1.8464533333333335,
+        "mean_food": 0.0,
+        "mean_danger": 3.0
+      }
+    },
+    {
+      "trial": 13,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 40,
+        "w_ring": 9.558704579668582,
+        "w_support": 1.0650351368425102,
+        "w_cross_exc": 2.138574326271489,
+        "w_cross_inh": 8.656899010122915,
+        "w_input": 8.226059160336998,
+        "energy_low_threshold": 0.4086410155596363,
+        "danger_threshold": 0.15863448517642287,
+        "food_threshold": 0.024326798627546962,
+        "escape_activation_threshold": 0.0839353217313629,
+        "seeking_activation_threshold": 0.117635136699087,
+        "input_rate_hz": 292.66500605793374
+      },
+      "metrics": {
+        "score": 83.0,
+        "mean_steps": 88.33333333333333,
+        "std_steps": 51.85449728701349,
+        "mean_reward": -0.7680666666666677,
+        "mean_food": 0.0,
+        "mean_danger": 1.3333333333333333
+      }
+    },
+    {
+      "trial": 14,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 60,
+        "w_ring": 7.016848854686484,
+        "w_support": 1.0846471208701771,
+        "w_cross_exc": 6.6316274504121875,
+        "w_cross_inh": 5.728146782450153,
+        "w_input": 10.232439130705417,
+        "energy_low_threshold": 0.4818659980191049,
+        "danger_threshold": 0.09460833462063703,
+        "food_threshold": 0.14984179948377518,
+        "escape_activation_threshold": 0.1478896470827247,
+        "seeking_activation_threshold": 0.10378916786213266,
+        "input_rate_hz": 281.2157169571335
+      },
+      "metrics": {
+        "score": 113.33333333333334,
+        "mean_steps": 114.66666666666667,
+        "std_steps": 14.613540144521982,
+        "mean_reward": -0.04813333333333447,
+        "mean_food": 0.0,
+        "mean_danger": 0.3333333333333333
+      }
+    },
+    {
+      "trial": 15,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 20,
+        "w_ring": 6.099548908673324,
+        "w_support": 2.224736450198806,
+        "w_cross_exc": 6.3860239548525275,
+        "w_cross_inh": 8.92722510692149,
+        "w_input": 10.320913093055399,
+        "energy_low_threshold": 0.5388960249995421,
+        "danger_threshold": 0.08872898920256188,
+        "food_threshold": 0.11682224506916414,
+        "escape_activation_threshold": 0.05819932939568068,
+        "seeking_activation_threshold": 0.09894223170781383,
+        "input_rate_hz": 264.62559221392576
+      },
+      "metrics": {
+        "score": 113.0,
+        "mean_steps": 115.66666666666667,
+        "std_steps": 7.760297817881877,
+        "mean_reward": -0.10770666666666773,
+        "mean_food": 0.0,
+        "mean_danger": 0.6666666666666666
+      }
+    },
+    {
+      "trial": 16,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 30,
+        "w_ring": 5.442959690187445,
+        "w_support": 0.8575500160005716,
+        "w_cross_exc": 4.820479893537141,
+        "w_cross_inh": 4.364162358869713,
+        "w_input": 7.8612264170686235,
+        "energy_low_threshold": 0.7440995988258967,
+        "danger_threshold": 0.17205242937868165,
+        "food_threshold": 0.02030533013281037,
+        "escape_activation_threshold": 0.13728788771790953,
+        "seeking_activation_threshold": 0.047840759217447126,
+        "input_rate_hz": 248.6266194057144
+      },
+      "metrics": {
+        "score": 55.666666666666664,
+        "mean_steps": 65.0,
+        "std_steps": 34.292856398964496,
+        "mean_reward": -1.4472800000000003,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 17,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 40,
+        "w_ring": 9.302665862539495,
+        "w_support": 3.1254916094066045,
+        "w_cross_exc": 4.868196467564001,
+        "w_cross_inh": 3.2496520283630153,
+        "w_input": 10.31308344816221,
+        "energy_low_threshold": 0.48300687994584396,
+        "danger_threshold": 0.2101647137793382,
+        "food_threshold": 0.1754651662371453,
+        "escape_activation_threshold": 0.06541738930972273,
+        "seeking_activation_threshold": 0.05415254996544716,
+        "input_rate_hz": 309.3594012929786
+      },
+      "metrics": {
+        "score": 94.33333333333333,
+        "mean_steps": 98.33333333333333,
+        "std_steps": 37.71236166328253,
+        "mean_reward": -0.4385333333333343,
+        "mean_food": 0.0,
+        "mean_danger": 1.0
+      }
+    },
+    {
+      "trial": 18,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 20,
+        "w_ring": 10.462117960294417,
+        "w_support": 0.5964209774809137,
+        "w_cross_exc": 5.544873814501707,
+        "w_cross_inh": 5.257477176528527,
+        "w_input": 9.24686551965322,
+        "energy_low_threshold": 0.5946293348864033,
+        "danger_threshold": 0.1691740512554436,
+        "food_threshold": 0.09589710909994636,
+        "escape_activation_threshold": 0.14124545148802586,
+        "seeking_activation_threshold": 0.02715036683047268,
+        "input_rate_hz": 229.6571119591353
+      },
+      "metrics": {
+        "score": 68.33333333333333,
+        "mean_steps": 75.0,
+        "std_steps": 36.914315199752345,
+        "mean_reward": -1.0016800000000006,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 19,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 15,
+        "w_ring": 9.396463564335525,
+        "w_support": 3.0422951972027223,
+        "w_cross_exc": 2.616632321175085,
+        "w_cross_inh": 7.246473599488837,
+        "w_input": 5.114005829918947,
+        "energy_low_threshold": 0.7446197684757201,
+        "danger_threshold": 0.08896108839833028,
+        "food_threshold": 0.15982509638195314,
+        "escape_activation_threshold": 0.013919121587700197,
+        "seeking_activation_threshold": 0.033405777158039295,
+        "input_rate_hz": 220.2323839672497
+      },
+      "metrics": {
+        "score": 30.666666666666664,
+        "mean_steps": 42.666666666666664,
+        "std_steps": 10.842303978193728,
+        "mean_reward": -1.9384533333333334,
+        "mean_food": 0.0,
+        "mean_danger": 3.0
+      }
+    },
+    {
+      "trial": 20,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 30,
+        "w_ring": 6.426506373986156,
+        "w_support": 1.9665439346409026,
+        "w_cross_exc": 2.7864420590209003,
+        "w_cross_inh": 8.370119394208896,
+        "w_input": 6.830272191626071,
+        "energy_low_threshold": 0.5332643945886935,
+        "danger_threshold": 0.16666975440837,
+        "food_threshold": 0.16468748392672636,
+        "escape_activation_threshold": 0.06888795789926912,
+        "seeking_activation_threshold": 0.11094931927769307,
+        "input_rate_hz": 220.3297882240463
+      },
+      "metrics": {
+        "score": 9.666666666666666,
+        "mean_steps": 24.333333333333332,
+        "std_steps": 9.463379711052259,
+        "mean_reward": -2.5898133333333333,
+        "mean_food": 0.0,
+        "mean_danger": 3.6666666666666665
+      }
+    },
+    {
+      "trial": 21,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 20,
+        "w_ring": 7.879286220729415,
+        "w_support": 0.5654670376689701,
+        "w_cross_exc": 4.64074947430966,
+        "w_cross_inh": 3.2817552109053914,
+        "w_input": 4.031459854605136,
+        "energy_low_threshold": 0.6696681801968887,
+        "danger_threshold": 0.08446934244268978,
+        "food_threshold": 0.09575886919391302,
+        "escape_activation_threshold": 0.1115270578626329,
+        "seeking_activation_threshold": 0.07121231873924345,
+        "input_rate_hz": 185.1964302097728
+      },
+      "metrics": {
+        "score": 58.333333333333336,
+        "mean_steps": 67.66666666666667,
+        "std_steps": 34.4222150491349,
+        "mean_reward": -1.3681733333333337,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 22,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 60,
+        "w_ring": 8.054930311841357,
+        "w_support": 3.2449536637791643,
+        "w_cross_exc": 2.6366565026295694,
+        "w_cross_inh": 5.922072935087666,
+        "w_input": 5.98795456834472,
+        "energy_low_threshold": 0.4607668281859126,
+        "danger_threshold": 0.20445221975109767,
+        "food_threshold": 0.1012342386867713,
+        "escape_activation_threshold": 0.08864211413190666,
+        "seeking_activation_threshold": 0.09359924568490183,
+        "input_rate_hz": 302.4976072659624
+      },
+      "metrics": {
+        "score": 74.66666666666666,
+        "mean_steps": 81.33333333333333,
+        "std_steps": 25.223445883190152,
+        "mean_reward": -0.9999466666666672,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 23,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 30,
+        "w_ring": 8.368903363894532,
+        "w_support": 2.269435957979276,
+        "w_cross_exc": 5.072968834611917,
+        "w_cross_inh": 6.849117017837604,
+        "w_input": 7.618766338119277,
+        "energy_low_threshold": 0.5633141750316684,
+        "danger_threshold": 0.14560726360641696,
+        "food_threshold": 0.1706401804061601,
+        "escape_activation_threshold": 0.10789050350524,
+        "seeking_activation_threshold": 0.10641890299586526,
+        "input_rate_hz": 308.4361176607151
+      },
+      "metrics": {
+        "score": 62.66666666666667,
+        "mean_steps": 70.66666666666667,
+        "std_steps": 21.044925490219462,
+        "mean_reward": -1.1539200000000005,
+        "mean_food": 0.0,
+        "mean_danger": 2.0
+      }
+    },
+    {
+      "trial": 24,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 60,
+        "w_ring": 9.91015217965818,
+        "w_support": 1.209059845209116,
+        "w_cross_exc": 4.685169330409218,
+        "w_cross_inh": 4.916459395374012,
+        "w_input": 7.13891502869833,
+        "energy_low_threshold": 0.4763919176833215,
+        "danger_threshold": 0.18423108941411787,
+        "food_threshold": 0.08853418835773559,
+        "escape_activation_threshold": 0.03977657194231525,
+        "seeking_activation_threshold": 0.04330580827767373,
+        "input_rate_hz": 144.4699774638212
+      },
+      "metrics": {
+        "score": 15.000000000000002,
+        "mean_steps": 29.666666666666668,
+        "std_steps": 15.062831370260005,
+        "mean_reward": -2.384266666666667,
+        "mean_food": 0.0,
+        "mean_danger": 3.6666666666666665
+      }
+    },
+    {
+      "trial": 25,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 30,
+        "w_ring": 5.7863844885833045,
+        "w_support": 3.589914917799764,
+        "w_cross_exc": 7.805268695998303,
+        "w_cross_inh": 3.537114815613438,
+        "w_input": 11.620033031351891,
+        "energy_low_threshold": 0.5093027498869087,
+        "danger_threshold": 0.14745215499817604,
+        "food_threshold": 0.17837943275908583,
+        "escape_activation_threshold": 0.12654225372761266,
+        "seeking_activation_threshold": 0.027761266586896705,
+        "input_rate_hz": 206.3043635995278
+      },
+      "metrics": {
+        "score": 60.66666666666667,
+        "mean_steps": 68.66666666666667,
+        "std_steps": 40.00277768133385,
+        "mean_reward": -1.2207200000000007,
+        "mean_food": 0.0,
+        "mean_danger": 2.0
+      }
+    },
+    {
+      "trial": 26,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 40,
+        "w_ring": 6.865138793863509,
+        "w_support": 1.185106331468759,
+        "w_cross_exc": 3.911153410026164,
+        "w_cross_inh": 7.0550558459883,
+        "w_input": 4.155863424419145,
+        "energy_low_threshold": 0.5716200991233312,
+        "danger_threshold": 0.1380916203605404,
+        "food_threshold": 0.022893116932326017,
+        "escape_activation_threshold": 0.05640970447987868,
+        "seeking_activation_threshold": 0.07863197812810503,
+        "input_rate_hz": 222.45245689269112
+      },
+      "metrics": {
+        "score": 46.0,
+        "mean_steps": 56.666666666666664,
+        "std_steps": 21.853044537445015,
+        "mean_reward": -1.6429600000000004,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 27,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 15,
+        "w_ring": 10.417957842737547,
+        "w_support": 3.2592706963415328,
+        "w_cross_exc": 7.830175751882445,
+        "w_cross_inh": 2.733457159909821,
+        "w_input": 6.124514178748158,
+        "energy_low_threshold": 0.36583527596562704,
+        "danger_threshold": 0.20579948601357845,
+        "food_threshold": 0.06327137560340945,
+        "escape_activation_threshold": 0.02813777830279482,
+        "seeking_activation_threshold": 0.056447959940542726,
+        "input_rate_hz": 302.2827632367218
+      },
+      "metrics": {
+        "score": 37.0,
+        "mean_steps": 47.666666666666664,
+        "std_steps": 17.441967269268172,
+        "mean_reward": -1.7215866666666668,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 28,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 40,
+        "w_ring": 5.82152371072243,
+        "w_support": 3.7171002797911994,
+        "w_cross_exc": 5.423569552359523,
+        "w_cross_inh": 6.902922125826325,
+        "w_input": 4.715697662774462,
+        "energy_low_threshold": 0.3730106049763785,
+        "danger_threshold": 0.18764111426970964,
+        "food_threshold": 0.08805072652731563,
+        "escape_activation_threshold": 0.020137973261246667,
+        "seeking_activation_threshold": 0.1132184679944179,
+        "input_rate_hz": 246.8879012593119
+      },
+      "metrics": {
+        "score": 50.66666666666667,
+        "mean_steps": 61.333333333333336,
+        "std_steps": 8.65383665716478,
+        "mean_reward": -1.7418400000000005,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 29,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 15,
+        "w_ring": 8.34497582323296,
+        "w_support": 1.2784279639510725,
+        "w_cross_exc": 3.586705976550652,
+        "w_cross_inh": 2.851742909672965,
+        "w_input": 4.092370649525629,
+        "energy_low_threshold": 0.7477223561795476,
+        "danger_threshold": 0.13355206687252114,
+        "food_threshold": 0.16646827252848118,
+        "escape_activation_threshold": 0.09703848360547028,
+        "seeking_activation_threshold": 0.01475262588233241,
+        "input_rate_hz": 261.90734362369204
+      },
+      "metrics": {
+        "score": 85.66666666666667,
+        "mean_steps": 91.0,
+        "std_steps": 48.08326112068523,
+        "mean_reward": -0.7463866666666675,
+        "mean_food": 0.0,
+        "mean_danger": 1.3333333333333333
+      }
+    },
+    {
+      "trial": 30,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 20,
+        "w_ring": 6.440424105354312,
+        "w_support": 1.1340108864470484,
+        "w_cross_exc": 7.59348133110966,
+        "w_cross_inh": 6.400697679333669,
+        "w_input": 8.248686716526642,
+        "energy_low_threshold": 0.4323486187754894,
+        "danger_threshold": 0.1391373746098408,
+        "food_threshold": 0.12754515192258345,
+        "escape_activation_threshold": 0.047873131249697075,
+        "seeking_activation_threshold": 0.09840468393264666,
+        "input_rate_hz": 318.8997969783079
+      },
+      "metrics": {
+        "score": 125.0,
+        "mean_steps": 125.0,
+        "std_steps": 0.0,
+        "mean_reward": 0.23999999999999866,
+        "mean_food": 0.0,
+        "mean_danger": 0.0
+      }
+    },
+    {
+      "trial": 31,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 15,
+        "w_ring": 5.10138643184261,
+        "w_support": 2.2697889352490894,
+        "w_cross_exc": 7.868309759622358,
+        "w_cross_inh": 5.599644380236599,
+        "w_input": 5.965436156668832,
+        "energy_low_threshold": 0.5288222196885387,
+        "danger_threshold": 0.18166406425672793,
+        "food_threshold": 0.12401695899030873,
+        "escape_activation_threshold": 0.10191132164970203,
+        "seeking_activation_threshold": 0.07004968771195062,
+        "input_rate_hz": 297.7451938287706
+      },
+      "metrics": {
+        "score": 84.33333333333333,
+        "mean_steps": 91.0,
+        "std_steps": 2.160246899469287,
+        "mean_reward": -0.785133333333334,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 32,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 30,
+        "w_ring": 8.782579546298802,
+        "w_support": 3.93854189145179,
+        "w_cross_exc": 4.056227752504847,
+        "w_cross_inh": 7.826005802851147,
+        "w_input": 9.653803213169823,
+        "energy_low_threshold": 0.6043907795540058,
+        "danger_threshold": 0.13093954174136826,
+        "food_threshold": 0.07560834882483712,
+        "escape_activation_threshold": 0.017614395150381074,
+        "seeking_activation_threshold": 0.024280043926597113,
+        "input_rate_hz": 134.14456311680124
+      },
+      "metrics": {
+        "score": 7.666666666666666,
+        "mean_steps": 22.333333333333332,
+        "std_steps": 13.097921802925667,
+        "mean_reward": -2.5204133333333334,
+        "mean_food": 0.0,
+        "mean_danger": 3.6666666666666665
+      }
+    },
+    {
+      "trial": 33,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 40,
+        "w_ring": 5.897855861520067,
+        "w_support": 0.7956970544777575,
+        "w_cross_exc": 7.047613891104539,
+        "w_cross_inh": 8.093764748734237,
+        "w_input": 9.364346383269428,
+        "energy_low_threshold": 0.4627733129226518,
+        "danger_threshold": 0.09844258679849732,
+        "food_threshold": 0.06688935881285367,
+        "escape_activation_threshold": 0.0743234120752609,
+        "seeking_activation_threshold": 0.027328623381212627,
+        "input_rate_hz": 209.16492164674804
+      },
+      "metrics": {
+        "score": 69.66666666666666,
+        "mean_steps": 76.33333333333333,
+        "std_steps": 38.09053542402481,
+        "mean_reward": -0.9699866666666672,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 34,
+      "params": {
+        "ring_size": 12,
+        "snn_step_ms": 30,
+        "w_ring": 10.289825933494374,
+        "w_support": 3.904180492812317,
+        "w_cross_exc": 5.282440244713451,
+        "w_cross_inh": 3.711125457593255,
+        "w_input": 11.72533416047028,
+        "energy_low_threshold": 0.4738191670711811,
+        "danger_threshold": 0.12131678340279742,
+        "food_threshold": 0.020171026391187646,
+        "escape_activation_threshold": 0.0634277249257615,
+        "seeking_activation_threshold": 0.06221079901369046,
+        "input_rate_hz": 220.55280127527993
+      },
+      "metrics": {
+        "score": 115.66666666666667,
+        "mean_steps": 117.0,
+        "std_steps": 11.313708498984761,
+        "mean_reward": 0.056946666666665445,
+        "mean_food": 0.0,
+        "mean_danger": 0.3333333333333333
+      }
+    },
+    {
+      "trial": 35,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 20,
+        "w_ring": 7.77604601732872,
+        "w_support": 0.5173268602638016,
+        "w_cross_exc": 3.5850121148099428,
+        "w_cross_inh": 2.6282737851668596,
+        "w_input": 7.196089362311406,
+        "energy_low_threshold": 0.36666678307646106,
+        "danger_threshold": 0.05449882939405151,
+        "food_threshold": 0.06867912963589415,
+        "escape_activation_threshold": 0.04259333932271285,
+        "seeking_activation_threshold": 0.07441416125997967,
+        "input_rate_hz": 225.83790965862198
+      },
+      "metrics": {
+        "score": 24.0,
+        "mean_steps": 36.0,
+        "std_steps": 20.607442021431645,
+        "mean_reward": -1.998866666666667,
+        "mean_food": 0.0,
+        "mean_danger": 3.0
+      }
+    },
+    {
+      "trial": 36,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 60,
+        "w_ring": 7.142340590832475,
+        "w_support": 1.6414716394422233,
+        "w_cross_exc": 7.908374510445777,
+        "w_cross_inh": 3.046242043295771,
+        "w_input": 9.793246186894606,
+        "energy_low_threshold": 0.6072877798818117,
+        "danger_threshold": 0.05875761333831717,
+        "food_threshold": 0.153646326917423,
+        "escape_activation_threshold": 0.13487192982299154,
+        "seeking_activation_threshold": 0.07900653367651192,
+        "input_rate_hz": 266.77042469539236
+      },
+      "metrics": {
+        "score": 125.0,
+        "mean_steps": 125.0,
+        "std_steps": 0.0,
+        "mean_reward": 0.23999999999999866,
+        "mean_food": 0.0,
+        "mean_danger": 0.0
+      }
+    },
+    {
+      "trial": 37,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 20,
+        "w_ring": 10.004382091616579,
+        "w_support": 3.135035054872175,
+        "w_cross_exc": 5.410876996886921,
+        "w_cross_inh": 7.690337744599158,
+        "w_input": 4.128638078356333,
+        "energy_low_threshold": 0.6245886969091341,
+        "danger_threshold": 0.2095934374523606,
+        "food_threshold": 0.1337897833381836,
+        "escape_activation_threshold": 0.14385087905128044,
+        "seeking_activation_threshold": 0.08071787793407945,
+        "input_rate_hz": 137.01834057444412
+      },
+      "metrics": {
+        "score": 58.333333333333336,
+        "mean_steps": 67.66666666666667,
+        "std_steps": 34.4222150491349,
+        "mean_reward": -1.3681733333333337,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 38,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 20,
+        "w_ring": 8.504159323751114,
+        "w_support": 3.858306250476894,
+        "w_cross_exc": 4.2597095892945465,
+        "w_cross_inh": 5.159703261477431,
+        "w_input": 4.406242527232593,
+        "energy_low_threshold": 0.35753627010055317,
+        "danger_threshold": 0.15628876787523055,
+        "food_threshold": 0.05912954865609921,
+        "escape_activation_threshold": 0.046931005272746115,
+        "seeking_activation_threshold": 0.06026433771659978,
+        "input_rate_hz": 134.022306722798
+      },
+      "metrics": {
+        "score": 53.0,
+        "mean_steps": 62.333333333333336,
+        "std_steps": 24.280765135299085,
+        "mean_reward": -1.4313200000000004,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 39,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 60,
+        "w_ring": 5.505680602983737,
+        "w_support": 2.3409655297635217,
+        "w_cross_exc": 6.4743674577827,
+        "w_cross_inh": 5.317008977870305,
+        "w_input": 10.473750238087773,
+        "energy_low_threshold": 0.6884534515904135,
+        "danger_threshold": 0.09695712436636542,
+        "food_threshold": 0.14103062415744963,
+        "escape_activation_threshold": 0.04230305778664352,
+        "seeking_activation_threshold": 0.08149255080022558,
+        "input_rate_hz": 212.06801279477594
+      },
+      "metrics": {
+        "score": 93.0,
+        "mean_steps": 97.0,
+        "std_steps": 39.59797974644666,
+        "mean_reward": -0.45592000000000094,
+        "mean_food": 0.0,
+        "mean_danger": 1.0
+      }
+    },
+    {
+      "trial": 40,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 15,
+        "w_ring": 7.634555902388444,
+        "w_support": 2.89293796945823,
+        "w_cross_exc": 6.6018206349051365,
+        "w_cross_inh": 6.318818110447748,
+        "w_input": 9.142103803055889,
+        "energy_low_threshold": 0.38098872780712023,
+        "danger_threshold": 0.07948501457538149,
+        "food_threshold": 0.06063044506494325,
+        "escape_activation_threshold": 0.11405041603002065,
+        "seeking_activation_threshold": 0.04348588517551558,
+        "input_rate_hz": 233.55233957386167
+      },
+      "metrics": {
+        "score": 49.666666666666664,
+        "mean_steps": 59.0,
+        "std_steps": 24.8327740429189,
+        "mean_reward": -1.4875333333333336,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 41,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 40,
+        "w_ring": 5.33363557735003,
+        "w_support": 1.440704680262368,
+        "w_cross_exc": 6.032009471931415,
+        "w_cross_inh": 6.845296207993136,
+        "w_input": 9.405661254502196,
+        "energy_low_threshold": 0.4663425913717476,
+        "danger_threshold": 0.15330713880888153,
+        "food_threshold": 0.0943460565398903,
+        "escape_activation_threshold": 0.07528748160156433,
+        "seeking_activation_threshold": 0.023035314897172476,
+        "input_rate_hz": 298.73258523505405
+      },
+      "metrics": {
+        "score": 70.0,
+        "mean_steps": 76.66666666666667,
+        "std_steps": 37.366057086910075,
+        "mean_reward": -0.9030533333333338,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 42,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 30,
+        "w_ring": 10.37969155216365,
+        "w_support": 3.7768901933380072,
+        "w_cross_exc": 2.105026734899977,
+        "w_cross_inh": 5.2127957607451805,
+        "w_input": 10.559181541598946,
+        "energy_low_threshold": 0.7372433006602799,
+        "danger_threshold": 0.13989019393021906,
+        "food_threshold": 0.06298515842777294,
+        "escape_activation_threshold": 0.039377210798246166,
+        "seeking_activation_threshold": 0.11401460045843545,
+        "input_rate_hz": 162.14175950678117
+      },
+      "metrics": {
+        "score": 86.0,
+        "mean_steps": 91.33333333333333,
+        "std_steps": 25.590796956892312,
+        "mean_reward": -0.7087066666666675,
+        "mean_food": 0.0,
+        "mean_danger": 1.3333333333333333
+      }
+    },
+    {
+      "trial": 43,
+      "params": {
+        "ring_size": 20,
+        "snn_step_ms": 15,
+        "w_ring": 5.7795737282274215,
+        "w_support": 2.3342299939418685,
+        "w_cross_exc": 7.716442019919466,
+        "w_cross_inh": 2.9282355101671826,
+        "w_input": 10.561736084918273,
+        "energy_low_threshold": 0.5534977414595124,
+        "danger_threshold": 0.22737243192296858,
+        "food_threshold": 0.1325339262070519,
+        "escape_activation_threshold": 0.04239370442706578,
+        "seeking_activation_threshold": 0.10874762651604394,
+        "input_rate_hz": 217.22813128542978
+      },
+      "metrics": {
+        "score": 26.666666666666664,
+        "mean_steps": 38.666666666666664,
+        "std_steps": 17.78263822446552,
+        "mean_reward": -2.0513333333333335,
+        "mean_food": 0.0,
+        "mean_danger": 3.0
+      }
+    },
+    {
+      "trial": 44,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 20,
+        "w_ring": 5.019747594183516,
+        "w_support": 2.2209363831993816,
+        "w_cross_exc": 4.7045618029871275,
+        "w_cross_inh": 4.113657288925941,
+        "w_input": 5.1256577620614285,
+        "energy_low_threshold": 0.48758405857117815,
+        "danger_threshold": 0.11321560907499395,
+        "food_threshold": 0.1544369653836779,
+        "escape_activation_threshold": 0.01024379346845046,
+        "seeking_activation_threshold": 0.09258074452884486,
+        "input_rate_hz": 287.82215893009237
+      },
+      "metrics": {
+        "score": 29.333333333333336,
+        "mean_steps": 41.333333333333336,
+        "std_steps": 16.759740119968715,
+        "mean_reward": -1.8957866666666667,
+        "mean_food": 0.0,
+        "mean_danger": 3.0
+      }
+    },
+    {
+      "trial": 45,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 20,
+        "w_ring": 8.92162961188308,
+        "w_support": 3.6554829708462755,
+        "w_cross_exc": 3.738997753853152,
+        "w_cross_inh": 4.605553995481442,
+        "w_input": 7.143195056328836,
+        "energy_low_threshold": 0.7495170023142455,
+        "danger_threshold": 0.16783533107698068,
+        "food_threshold": 0.07771349182774483,
+        "escape_activation_threshold": 0.06992738519453923,
+        "seeking_activation_threshold": 0.04026707778847276,
+        "input_rate_hz": 129.6536193499531
+      },
+      "metrics": {
+        "score": 42.333333333333336,
+        "mean_steps": 53.0,
+        "std_steps": 7.2571803523590805,
+        "mean_reward": -1.726506666666667,
+        "mean_food": 0.0,
+        "mean_danger": 2.6666666666666665
+      }
+    },
+    {
+      "trial": 46,
+      "params": {
+        "ring_size": 8,
+        "snn_step_ms": 15,
+        "w_ring": 9.59071797237456,
+        "w_support": 1.4996811652360273,
+        "w_cross_exc": 7.613539329867708,
+        "w_cross_inh": 3.74527301488273,
+        "w_input": 6.1258241198206385,
+        "energy_low_threshold": 0.5543851951229612,
+        "danger_threshold": 0.08796980943260138,
+        "food_threshold": 0.07973588560240585,
+        "escape_activation_threshold": 0.143863137065505,
+        "seeking_activation_threshold": 0.10726932110779913,
+        "input_rate_hz": 282.39245349415444
+      },
+      "metrics": {
+        "score": 68.0,
+        "mean_steps": 74.66666666666667,
+        "std_steps": 37.2588542795162,
+        "mean_reward": -0.9930400000000006,
+        "mean_food": 0.0,
+        "mean_danger": 1.6666666666666667
+      }
+    },
+    {
+      "trial": 47,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 60,
+        "w_ring": 8.0207548150338,
+        "w_support": 3.018504036829018,
+        "w_cross_exc": 2.2968562066614036,
+        "w_cross_inh": 7.126467279167488,
+        "w_input": 7.606883383686188,
+        "energy_low_threshold": 0.6510672036962882,
+        "danger_threshold": 0.17889814208370275,
+        "food_threshold": 0.06579333124825368,
+        "escape_activation_threshold": 0.01685676669826159,
+        "seeking_activation_threshold": 0.11194547512018607,
+        "input_rate_hz": 145.46226407701192
+      },
+      "metrics": {
+        "score": 55.333333333333336,
+        "mean_steps": 64.66666666666667,
+        "std_steps": 17.01633202413362,
+        "mean_reward": -1.2562133333333336,
+        "mean_food": 0.0,
+        "mean_danger": 2.3333333333333335
+      }
+    },
+    {
+      "trial": 48,
+      "params": {
+        "ring_size": 16,
+        "snn_step_ms": 40,
+        "w_ring": 6.8901456896186115,
+        "w_support": 1.542201529406754,
+        "w_cross_exc": 6.434195029977498,
+        "w_cross_inh": 8.834073234868978,
+        "w_input": 6.081352436912612,
+        "energy_low_threshold": 0.6123981304128916,
+        "danger_threshold": 0.11016725820777121,
+        "food_threshold": 0.10917147239312647,
+        "escape_activation_threshold": 0.06521148887845837,
+        "seeking_activation_threshold": 0.028406571453456236,
+        "input_rate_hz": 152.33139228101163
+      },
+      "metrics": {
+        "score": 27.33333333333333,
+        "mean_steps": 40.666666666666664,
+        "std_steps": 8.73053390247253,
+        "mean_reward": -2.074986666666667,
+        "mean_food": 0.0,
+        "mean_danger": 3.3333333333333335
+      }
+    },
+    {
+      "trial": 49,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 60,
+        "w_ring": 9.982779506333515,
+        "w_support": 2.2397652486440007,
+        "w_cross_exc": 3.3201515132033554,
+        "w_cross_inh": 8.343815731479523,
+        "w_input": 11.971800908997526,
+        "energy_low_threshold": 0.5299841774327249,
+        "danger_threshold": 0.07791921279994443,
+        "food_threshold": 0.0507851353217192,
+        "escape_activation_threshold": 0.022700031134913208,
+        "seeking_activation_threshold": 0.047615075715975085,
+        "input_rate_hz": 138.21886795653066
+      },
+      "metrics": {
+        "score": 90.0,
+        "mean_steps": 94.0,
+        "std_steps": 43.840620433565945,
+        "mean_reward": -0.4981600000000009,
+        "mean_food": 0.0,
+        "mean_danger": 1.0
+      }
+    },
+    {
+      "trial": 50,
+      "params": {
+        "ring_size": 10,
+        "snn_step_ms": 30,
+        "w_ring": 6.420966624852056,
+        "w_support": 2.49366209810597,
+        "w_cross_exc": 7.3235087552703195,
+        "w_cross_inh": 7.247603253232751,
+        "w_input": 7.302253269126289,
+        "energy_low_threshold": 0.5155534289653317,
+        "danger_threshold": 0.15483362855017918,
+        "food_threshold": 0.08029853018550855,
+        "escape_activation_threshold": 0.05734843407046452,
+        "seeking_activation_threshold": 0.016826546972960592,
+        "input_rate_hz": 175.50326939565056
+      },
+      "metrics": {
+        "score": 21.33333333333333,
+        "mean_steps": 34.666666666666664,
+        "std_steps": 14.29063407348401,
+        "mean_reward": -2.1252533333333337,
+        "mean_food": 0.0,
+        "mean_danger": 3.3333333333333335
+      }
+    }
+  ]
+}

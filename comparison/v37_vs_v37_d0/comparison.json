@@ -1,0 +1,30 @@
+[
+  {
+    "model": "results_v037_d0",
+    "common_seeds": 100,
+    "mean": 529.837,
+    "ci95": [
+      492.4219749999999,
+      567.4056499999999
+    ],
+    "difference_from_first": 0.0,
+    "paired_difference_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "model": "results_v037",
+    "common_seeds": 100,
+    "mean": 265.188,
+    "ci95": [
+      247.09882500000003,
+      282.4471
+    ],
+    "difference_from_first": -264.649,
+    "paired_difference_ci95": [
+      -306.105875,
+      -223.135625
+    ]
+  }
+]

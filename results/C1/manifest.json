@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "model": "/home/user/RINGS/rings_model_C.py",
+  "model_sha256": "5d1e0789c73f7d30cc7d12eb36ba1c7521da619ca21a4830efce554f8e9e591f",
+  "params": "/home/user/RINGS/rings_C_best_params.json",
+  "params_sha256": "c5d04f833ece111ea122dcc8a16e4888bb17c3cfbafd84b3ab10bf62853d1195",
+  "seeds": 100,
+  "repeats": 10,
+  "start_seed": 1,
+  "master_seed": 20261005,
+  "max_steps": 1000,
+  "grid_size": 15,
+  "danger_speed": 0.5,
+  "minigrid_compat": true,
+  "ablation": "full"
+}

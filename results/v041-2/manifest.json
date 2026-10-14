@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "model": "/home/user/RINGS/rings_minigrid_brian_2_prototype41.py",
+  "model_sha256": "8f70577b6350ecc9f4dd083388ded45d5fb5f1eaef98c481df9867b328b494de",
+  "params": "/home/user/RINGS/rings_v041-2_best.json",
+  "params_sha256": "49335e63a76a0ca75248e95214f2df45b8cad5b8ccc96e68e95a3624645c55b3",
+  "seeds": 100,
+  "repeats": 10,
+  "start_seed": 1,
+  "master_seed": 20261005,
+  "max_steps": 1000,
+  "grid_size": 15,
+  "danger_speed": 0.5,
+  "minigrid_compat": true
+}

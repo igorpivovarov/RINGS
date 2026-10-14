@@ -1,0 +1,708 @@
+{
+  "agent_version": "0.51.0",
+  "source_sha256": "a45421fb01c834ac2b4a7a5104dadfd912f0eab7774a91735e21722b822b417b",
+  "params": {
+    "ring_size": 24,
+    "state_rings": 4,
+    "motor_size": 8,
+    "topology_seed": 1701,
+    "snn_step_ms": 30.0,
+    "dt_ms": 0.1,
+    "sensor_range": 3,
+    "membrane_tau_ms": 15.0,
+    "excitatory_tau_ms": 4.0,
+    "inhibitory_tau_ms": 6.0,
+    "ring_delay_ms": 5.0,
+    "adaptation_tau_ms": 80.0,
+    "adaptation_jump_mv": 2.0,
+    "trace_tau_ms": 60.0,
+    "state_tonic_mv": 17.0,
+    "tonic_spread_mv": 1.5,
+    "receptor_drive_mv": 50.0,
+    "receptor_half": 0.12,
+    "satiety_midpoint": 0.95,
+    "mod_tau_ms": 40.0,
+    "mod_refractory_ms": 15.0,
+    "foraging_tau_ms": 450.0,
+    "defense_tau_ms": 300.0,
+    "fatigue_tau_ms": 600.0,
+    "curiosity_tau_ms": 600.0,
+    "foraging_release": 0.12,
+    "defense_release": 0.14,
+    "fatigue_release": 0.05,
+    "curiosity_release": 0.14,
+    "receptor_kd": 0.25,
+    "curiosity_tonic_mv": 18.0,
+    "foraging_drive_mv": 8.0,
+    "defense_drive_mv": 14.0,
+    "fatigue_drive_mv": 12.0,
+    "curiosity_drive_mv": 6.0,
+    "g_ring": 1.1,
+    "g_support": 0.25,
+    "g_cross": 0.15,
+    "g_state_to_inh": 0.18,
+    "g_state_inhibition": 0.35,
+    "g_food": 4.0,
+    "g_threat": 3.0,
+    "g_body": 1.2,
+    "g_proprioception": 1.5,
+    "g_food_competition": 3.0,
+    "g_threat_rest_inhibition": 5.0,
+    "defense_gate_mv": 90.0,
+    "selectivity": 4.0,
+    "g_afferent_inhibition": 2.0,
+    "g_interneuron_in": 1.8,
+    "g_readout": 5.5,
+    "g_pool_in": 0.025,
+    "g_pool_out": 0.8,
+    "g_competition_in": 0.4,
+    "g_competition_out": 0.6,
+    "g_afferent_mod": 1.0,
+    "g_effort_mod": 0.55,
+    "g_mod_inhibition": 1.0,
+    "noise_rate_hz": 40.0,
+    "noise_g": 0.08
+  },
+  "python": "3.8.10 (default, Sep 11 2024, 16:02:53) \n[GCC 9.4.0]",
+  "runtime": {
+    "brian2": "2.5.1",
+    "minigrid": "3.0.0",
+    "gymnasium": "0.29.0",
+    "numpy": "1.24.3"
+  },
+  "results": {
+    "continuity": {
+      "silent_windows": 0,
+      "mean_rate_hz": 19.96527777777778,
+      "mean_rate_without_noise_hz": 19.6875,
+      "max_global_gap_ms": 6.200000000000273,
+      "duration_ms": 1500.0000000000011
+    },
+    "causal_readout_cut": {
+      "motor_before": [
+        8.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "motor_after": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_rate_after_hz": 52.43055555555556
+    },
+    "topology": {
+      "no_direct_sensor_or_chemical_motor_path": true,
+      "state_cells": 96,
+      "motor_cells": 32
+    },
+    "history_full": {
+      "sensory_gap_ms": 240.0,
+      "state_distance": 0.7399943826464261,
+      "chemical_concentrations_equal": true,
+      "motor_response_distance": 3.3189795118379384,
+      "probe_protocol": "state snapshot into fresh identical periphery/readout; no delayed events transferred",
+      "response_after_left": [
+        [
+          2,
+          2.0,
+          0.0,
+          3.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.75,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.25,
+          0.0
+        ]
+      ],
+      "response_after_right": [
+        [
+          2,
+          0.0,
+          2.625,
+          3.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          7.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ]
+      ]
+    },
+    "history_no-state-recurrence": {
+      "sensory_gap_ms": 240.0,
+      "state_distance": 0.16670267252017237,
+      "chemical_concentrations_equal": true,
+      "motor_response_distance": 0.0,
+      "probe_protocol": "state snapshot into fresh identical periphery/readout; no delayed events transferred",
+      "response_after_left": [
+        [
+          2,
+          1.0,
+          1.0,
+          4.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ]
+      ],
+      "response_after_right": [
+        [
+          2,
+          1.0,
+          1.0,
+          4.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          6.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          2,
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ]
+      ]
+    },
+    "satiety": {
+      "forward_steps": 0,
+      "turn_steps": 0,
+      "active_rest_steps": 30,
+      "motor_silent_steps": 0,
+      "state_silent_steps": 0
+    },
+    "low_energy": {
+      "forward_steps": 15,
+      "turn_steps": 5,
+      "active_rest_steps": 10,
+      "motor_silent_steps": 0,
+      "state_silent_steps": 0
+    },
+    "danger_ahead": {
+      "forward_steps": 14,
+      "turn_steps": 8,
+      "active_rest_steps": 8,
+      "motor_silent_steps": 0,
+      "state_silent_steps": 0
+    },
+    "sensorimotor": {
+      "passed": true,
+      "cases": [
+        {
+          "case": "food_left",
+          "seed": 4,
+          "hunger": 0.2,
+          "strength": 0.444444,
+          "actions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 48.958333333333336,
+          "passed": true
+        },
+        {
+          "case": "food_right",
+          "seed": 4,
+          "hunger": 0.2,
+          "strength": 0.444444,
+          "actions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 50.34722222222223,
+          "passed": true
+        },
+        {
+          "case": "food_ahead",
+          "seed": 4,
+          "hunger": 0.2,
+          "strength": 0.444444,
+          "actions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "after_reorientation": [],
+          "min_state_rate_hz": 52.083333333333336,
+          "passed": true
+        },
+        {
+          "case": "food_left",
+          "seed": 4,
+          "hunger": 0.8,
+          "strength": 1.0,
+          "actions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 53.125,
+          "passed": true
+        },
+        {
+          "case": "food_right",
+          "seed": 4,
+          "hunger": 0.8,
+          "strength": 1.0,
+          "actions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 52.77777777777778,
+          "passed": true
+        },
+        {
+          "case": "food_ahead",
+          "seed": 4,
+          "hunger": 0.8,
+          "strength": 1.0,
+          "actions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "after_reorientation": [],
+          "min_state_rate_hz": 55.55555555555556,
+          "passed": true
+        },
+        {
+          "case": "danger_left_satiated",
+          "seed": 4,
+          "actions": [
+            1,
+            1,
+            1
+          ],
+          "after_threat_withdrawal": [
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "defense_after": [
+            0.2077516984831987,
+            0.1879815104481293,
+            0.17009270455239123,
+            0.15390624361394467,
+            0.13926012809126057,
+            0.12600777473745783,
+            0.11401654954590242,
+            0.10316644030448717,
+            0.09334885547307648,
+            0.08446553736287359,
+            0.07642757874044523,
+            0.06915453301424702,
+            0.06257360909809596,
+            0.05661894289351464,
+            0.05123093809969511,
+            0.046355669753689856,
+            0.04194434453125789,
+            0.03795281240687545
+          ],
+          "min_state_rate_hz": 9.722222222222223,
+          "passed": true
+        },
+        {
+          "case": "danger_right_satiated",
+          "seed": 4,
+          "actions": [
+            0,
+            0,
+            0
+          ],
+          "after_threat_withdrawal": [
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "defense_after": [
+            0.2077516984831987,
+            0.1879815104481293,
+            0.17009270455239123,
+            0.15390624361394467,
+            0.13926012809126057,
+            0.12600777473745783,
+            0.11401654954590242,
+            0.10316644030448717,
+            0.09334885547307648,
+            0.08446553736287359,
+            0.07642757874044523,
+            0.06915453301424702,
+            0.06257360909809596,
+            0.05661894289351464,
+            0.05123093809969511,
+            0.046355669753689856,
+            0.04194434453125789,
+            0.03795281240687545
+          ],
+          "min_state_rate_hz": 0.6944444444444444,
+          "passed": true
+        },
+        {
+          "case": "food_left",
+          "seed": 7,
+          "hunger": 0.2,
+          "strength": 0.444444,
+          "actions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 49.65277777777778,
+          "passed": true
+        },
+        {
+          "case": "food_right",
+          "seed": 7,
+          "hunger": 0.2,
+          "strength": 0.444444,
+          "actions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 50.69444444444444,
+          "passed": true
+        },
+        {
+          "case": "food_ahead",
+          "seed": 7,
+          "hunger": 0.2,
+          "strength": 0.444444,
+          "actions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "after_reorientation": [],
+          "min_state_rate_hz": 49.65277777777778,
+          "passed": true
+        },
+        {
+          "case": "food_left",
+          "seed": 7,
+          "hunger": 0.8,
+          "strength": 1.0,
+          "actions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 53.81944444444444,
+          "passed": true
+        },
+        {
+          "case": "food_right",
+          "seed": 7,
+          "hunger": 0.8,
+          "strength": 1.0,
+          "actions": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "after_reorientation": [
+            2,
+            2,
+            2
+          ],
+          "min_state_rate_hz": 53.81944444444444,
+          "passed": true
+        },
+        {
+          "case": "food_ahead",
+          "seed": 7,
+          "hunger": 0.8,
+          "strength": 1.0,
+          "actions": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "after_reorientation": [],
+          "min_state_rate_hz": 53.125,
+          "passed": true
+        },
+        {
+          "case": "danger_left_satiated",
+          "seed": 7,
+          "actions": [
+            1,
+            1,
+            1
+          ],
+          "after_threat_withdrawal": [
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "defense_after": [
+            0.2077516984831987,
+            0.1879815104481293,
+            0.17009270455239123,
+            0.15390624361394467,
+            0.13926012809126057,
+            0.12600777473745783,
+            0.11401654954590242,
+            0.10316644030448717,
+            0.09334885547307648,
+            0.08446553736287359,
+            0.07642757874044523,
+            0.06915453301424702,
+            0.06257360909809596,
+            0.05661894289351464,
+            0.05123093809969511,
+            0.046355669753689856,
+            0.04194434453125789,
+            0.03795281240687545
+          ],
+          "min_state_rate_hz": 0.3472222222222222,
+          "passed": true
+        },
+        {
+          "case": "danger_right_satiated",
+          "seed": 7,
+          "actions": [
+            0,
+            0,
+            2
+          ],
+          "after_threat_withdrawal": [
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "defense_after": [
+            0.2077516984831987,
+            0.1879815104481293,
+            0.17009270455239123,
+            0.15390624361394467,
+            0.13926012809126057,
+            0.12600777473745783,
+            0.11401654954590242,
+            0.10316644030448717,
+            0.09334885547307648,
+            0.08446553736287359,
+            0.07642757874044523,
+            0.06915453301424702,
+            0.06257360909809596,
+            0.05661894289351464,
+            0.05123093809969511,
+            0.046355669753689856,
+            0.04194434453125789,
+            0.03795281240687545
+          ],
+          "min_state_rate_hz": 0.6944444444444444,
+          "passed": true
+        }
+      ]
+    }
+  }
+}

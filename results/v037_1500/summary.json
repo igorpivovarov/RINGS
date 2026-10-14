@@ -1,0 +1,71 @@
+{
+  "expected_runs": 1000,
+  "successful_runs": 1000,
+  "failed_runs": 0,
+  "complete_seeds": 100,
+  "inference": "Bootstrap of complete environment-seed means; capped lifetime",
+  "metrics": {
+    "danger_contacts": {
+      "mean_all_successful": 3.48,
+      "mean_complete_seeds": 3.4799999999999995,
+      "median_all_successful": 4.0,
+      "sd_all_successful": 2.0980948505732533,
+      "ci95_complete_seeds": [
+        3.332,
+        3.6229999999999993
+      ]
+    },
+    "final_energy": {
+      "mean_all_successful": -0.06064688000000017,
+      "mean_complete_seeds": -0.06064688000000015,
+      "median_all_successful": -0.043279999999999985,
+      "sd_all_successful": 0.08969421396659137,
+      "ci95_complete_seeds": [
+        -0.06613170000000015,
+        -0.05463413800000017
+      ]
+    },
+    "food_collected": {
+      "mean_all_successful": 9.397,
+      "mean_complete_seeds": 9.397000000000002,
+      "median_all_successful": 6.0,
+      "sd_all_successful": 10.620460686108922,
+      "ci95_complete_seeds": [
+        8.579,
+        10.190999999999999
+      ]
+    },
+    "rest_steps": {
+      "mean_all_successful": 42.52,
+      "mean_complete_seeds": 42.52,
+      "median_all_successful": 29.0,
+      "sd_all_successful": 41.03734474431385,
+      "ci95_complete_seeds": [
+        39.525,
+        45.4014
+      ]
+    },
+    "steps": {
+      "mean_all_successful": 270.025,
+      "mean_complete_seeds": 270.02500000000003,
+      "median_all_successful": 188.0,
+      "sd_all_successful": 259.9821784432697,
+      "ci95_complete_seeds": [
+        251.21287500000003,
+        288.3831
+      ]
+    },
+    "total_reward": {
+      "mean_all_successful": 5.7640748560000015,
+      "mean_complete_seeds": 5.764074856000001,
+      "median_all_successful": 3.3265448000000006,
+      "sd_all_successful": 7.374105743124975,
+      "ci95_complete_seeds": [
+        5.21838929556,
+        6.2940101748
+      ]
+    }
+  },
+  "censored_runs": 4,
+  "reached_horizon_fraction": 0.004
+}

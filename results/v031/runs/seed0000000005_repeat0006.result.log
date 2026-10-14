@@ -1,0 +1,2 @@
+/home/user/.local/lib/python3.10/site-packages/setuptools/_distutils/_msvccompiler.py:12: UserWarning: _get_vc_env is private; find an alternative (pypa/distutils#340)
+  warnings.warn(

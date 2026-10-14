@@ -1,0 +1,71 @@
+{
+  "expected_runs": 1000,
+  "successful_runs": 1000,
+  "failed_runs": 0,
+  "complete_seeds": 100,
+  "inference": "Bootstrap of complete environment-seed means; capped lifetime",
+  "metrics": {
+    "danger_contacts": {
+      "mean_all_successful": 0.421,
+      "mean_complete_seeds": 0.42099999999999993,
+      "median_all_successful": 0.0,
+      "sd_all_successful": 0.9500850812751781,
+      "ci95_complete_seeds": [
+        0.363,
+        0.48402499999999965
+      ]
+    },
+    "final_energy": {
+      "mean_all_successful": 0.002998159999999812,
+      "mean_complete_seeds": 0.002998159999999813,
+      "median_all_successful": -0.004080000000000134,
+      "sd_all_successful": 0.12323232017514787,
+      "ci95_complete_seeds": [
+        -0.005018662000000201,
+        0.012165899999999808
+      ]
+    },
+    "food_collected": {
+      "mean_all_successful": 4.45,
+      "mean_complete_seeds": 4.450000000000001,
+      "median_all_successful": 3.0,
+      "sd_all_successful": 4.404190833387775,
+      "ci95_complete_seeds": [
+        4.057,
+        4.853
+      ]
+    },
+    "rest_steps": {
+      "mean_all_successful": 120.616,
+      "mean_complete_seeds": 120.61599999999999,
+      "median_all_successful": 100.0,
+      "sd_all_successful": 81.22800337649899,
+      "ci95_complete_seeds": [
+        112.97294999999998,
+        128.40935
+      ]
+    },
+    "steps": {
+      "mean_all_successful": 369.876,
+      "mean_complete_seeds": 369.876,
+      "median_all_successful": 316.0,
+      "sd_all_successful": 221.12171181373265,
+      "ci95_complete_seeds": [
+        350.68555,
+        389.44887500000004
+      ]
+    },
+    "total_reward": {
+      "mean_all_successful": 5.328849032000001,
+      "mean_complete_seeds": 5.328849032000001,
+      "median_all_successful": 4.103913600000001,
+      "sd_all_successful": 4.879152522306711,
+      "ci95_complete_seeds": [
+        4.896762523280002,
+        5.771036392440001
+      ]
+    }
+  },
+  "censored_runs": 29,
+  "reached_horizon_fraction": 0.029
+}

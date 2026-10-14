@@ -1,0 +1,152 @@
+[
+  {
+    "model": "R1",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 464.867,
+    "ci95": [
+      432.916975,
+      496.58742500000005
+    ],
+    "difference_from_first": 0.0,
+    "paired_difference_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "model": "C1",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 543.219,
+    "ci95": [
+      516.2563250000001,
+      569.473575
+    ],
+    "difference_from_first": 78.35199999999999,
+    "paired_difference_ci95": [
+      46.15577499999999,
+      111.51437499999999
+    ]
+  },
+  {
+    "model": "v0.24",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 105.726,
+    "ci95": [
+      98.026725,
+      113.50820000000002
+    ],
+    "difference_from_first": -359.14099999999996,
+    "paired_difference_ci95": [
+      -390.77810000000005,
+      -328.0508500000001
+    ]
+  },
+  {
+    "model": "v0.37",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 265.188,
+    "ci95": [
+      247.09882500000003,
+      282.4471
+    ],
+    "difference_from_first": -199.67899999999997,
+    "paired_difference_ci95": [
+      -233.44802499999994,
+      -166.82470000000004
+    ]
+  },
+  {
+    "model": "v0.43",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 361.0400000000001,
+    "ci95": [
+      334.43260000000004,
+      386.65957499999996
+    ],
+    "difference_from_first": -103.82700000000003,
+    "paired_difference_ci95": [
+      -138.78787500000004,
+      -69.18532500000002
+    ]
+  },
+  {
+    "model": "v0.50",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 252.64000000000004,
+    "ci95": [
+      234.3766,
+      270.70285
+    ],
+    "difference_from_first": -212.227,
+    "paired_difference_ci95": [
+      -244.51702500000005,
+      -180.05897500000006
+    ]
+  },
+  {
+    "model": "v0.51",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 407.7,
+    "ci95": [
+      385.293625,
+      430.2024999999999
+    ],
+    "difference_from_first": -57.167,
+    "paired_difference_ci95": [
+      -88.54630000000002,
+      -25.161150000000028
+    ]
+  },
+  {
+    "model": "v0.51-Ar",
+    "ablation": "full",
+    "common_seeds": 100,
+    "mean": 226.38099999999994,
+    "ci95": [
+      211.48567500000001,
+      241.219175
+    ],
+    "difference_from_first": -238.48600000000002,
+    "paired_difference_ci95": [
+      -270.08907500000004,
+      -207.072125
+    ]
+  },
+  {
+    "model": "v0.51-Ac",
+    "ablation": "no-chemistry",
+    "common_seeds": 100,
+    "mean": 337.60200000000003,
+    "ci95": [
+      314.71805,
+      361.5399749999999
+    ],
+    "difference_from_first": -127.26499999999999,
+    "paired_difference_ci95": [
+      -163.8061,
+      -91.09800000000004
+    ]
+  },
+  {
+    "model": "v0.51-Ab",
+    "ablation": "both",
+    "common_seeds": 100,
+    "mean": 393.8980000000001,
+    "ci95": [
+      367.2166999999999,
+      420.481725
+    ],
+    "difference_from_first": -70.969,
+    "paired_difference_ci95": [
+      -107.4273,
+      -34.75707500000003
+    ]
+  }
+]

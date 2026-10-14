@@ -1,0 +1,260 @@
+{
+  "version": "RC-1.3",
+  "model": "R",
+  "chemical_effect": false,
+  "neurons": 16,
+  "receptors": 12,
+  "motors": 4,
+  "secretors": 0,
+  "recurrent_synapses": 0,
+  "adaptation": false,
+  "neural_reset_between_steps": false,
+  "fast_transient_ms": 3.0,
+  "edges": [
+    {
+      "family": "sensory_to_motor",
+      "source": 0,
+      "target": 0,
+      "weight_mv": 12.5
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 0,
+      "target": 1,
+      "weight_mv": 12.5
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 0,
+      "target": 2,
+      "weight_mv": 50.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 0,
+      "target": 3,
+      "weight_mv": -30.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 1,
+      "target": 0,
+      "weight_mv": 90.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 1,
+      "target": 1,
+      "weight_mv": -31.499999999999996
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 1,
+      "target": 2,
+      "weight_mv": -31.499999999999996
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 2,
+      "target": 0,
+      "weight_mv": -31.499999999999996
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 2,
+      "target": 1,
+      "weight_mv": 90.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 2,
+      "target": 2,
+      "weight_mv": -31.499999999999996
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 3,
+      "target": 0,
+      "weight_mv": -31.499999999999996
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 3,
+      "target": 1,
+      "weight_mv": -31.499999999999996
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 3,
+      "target": 2,
+      "weight_mv": 90.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 4,
+      "target": 0,
+      "weight_mv": -100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 4,
+      "target": 1,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 4,
+      "target": 2,
+      "weight_mv": 65.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 4,
+      "target": 3,
+      "weight_mv": -150.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 5,
+      "target": 0,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 5,
+      "target": 1,
+      "weight_mv": -100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 5,
+      "target": 2,
+      "weight_mv": 65.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 5,
+      "target": 3,
+      "weight_mv": -150.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 6,
+      "target": 0,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 6,
+      "target": 1,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 6,
+      "target": 2,
+      "weight_mv": -150.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 6,
+      "target": 3,
+      "weight_mv": -150.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 7,
+      "target": 0,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 7,
+      "target": 1,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 7,
+      "target": 2,
+      "weight_mv": -200.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 8,
+      "target": 0,
+      "weight_mv": 40.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 8,
+      "target": 1,
+      "weight_mv": 40.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 8,
+      "target": 2,
+      "weight_mv": 100.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 8,
+      "target": 3,
+      "weight_mv": -150.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 9,
+      "target": 0,
+      "weight_mv": -10.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 9,
+      "target": 1,
+      "weight_mv": -10.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 9,
+      "target": 2,
+      "weight_mv": -10.0
+    },
+    {
+      "family": "sensory_to_motor",
+      "source": 9,
+      "target": 3,
+      "weight_mv": 20.0
+    }
+  ],
+  "params": {
+    "sensor_range": 3,
+    "snn_step_ms": 30.0,
+    "dt_ms": 0.1,
+    "membrane_tau_ms": 3.0,
+    "synapse_tau_ms": 2.0,
+    "satiety_midpoint": 0.95,
+    "receptor_drive_mv": 50.0,
+    "receptor_half": 0.12,
+    "food_weight": 90.0,
+    "threat_weight": 100.0,
+    "wall_weight": 100.0,
+    "hunger_weight": 50.0,
+    "satiety_weight": 20.0,
+    "rest_bias_mv": 17.0,
+    "foraging_drive_mv": 15.0,
+    "defense_drive_mv": 65.0,
+    "fatigue_drive_mv": 24.0,
+    "curiosity_drive_mv": 20.0,
+    "receptor_kd": 0.25,
+    "foraging_tau_ms": 450.0,
+    "defense_tau_ms": 300.0,
+    "fatigue_tau_ms": 600.0,
+    "curiosity_tau_ms": 600.0,
+    "foraging_release": 0.12,
+    "defense_release": 0.14,
+    "fatigue_release": 0.05,
+    "curiosity_release": 0.14
+  }
+}
