@@ -1,0 +1,14 @@
+# RINGS runtime dependencies
+# The current repository targets Python 3.8+ syntax.
+# Versions are intentionally not pinned yet because the project has not been
+# validated against a reproducible locked environment.
+
+numpy
+brian2
+gymnasium
+minigrid
+matplotlib
+pygame
+Pillow
+imageio
+imageio-ffmpeg
