@@ -1,9 +1,47 @@
 # RINGS
-The simple agent, controlled by spike neural network, implementing self-representation level 1-3 in terms of TEVSER. Agent is controled by spiking neural network, implemented with library Brian2. The project studies reactive control, chemical modulation, recurrent neural state and their contribution to behaviour in the context of TEVSER.
 
-[Русская версия](REAMDE_RU.md)
+**RINGS** is an experimental project for studying how progressively richer internal neural dynamics can support adaptive behaviour and minimal self-representation in a simple embodied agent.
 
-The agent works in Gymnaisum/MiniGrid environment, must collect food, avoid danger and manage energy. The main benchmark outcome is lifetime in environment steps, capped by `max_steps`. Neural activity and attractive dynamics are research subjects.
+The agent is controlled by a **spiking neural network (SNN)** implemented in [Brian2](https://brian2.readthedocs.io/) and acts in a **Gymnasium/MiniGrid** environment containing food, danger and an internal energy variable. To survive, it must collect food, avoid danger and regulate its own energy. The main behavioural benchmark is lifetime in environment steps, capped by `max_steps`, while the neural dynamics themselves are also a primary object of study.
+
+[Русская версия](README_RU.md)
+
+## Research idea
+
+RINGS is motivated by **TEVSER (Theory of Evolving Self-Representations)**. In TEVSER, increasingly capable behaviour emerges as a system acquires internal representations that distinguish and integrate information about its own state, the environment and the relation between them.
+
+The project asks a deliberately minimal question:
+
+> **What changes when an agent progresses from direct stimulus–response mappings to persistent internal neural states that participate in action selection?**
+
+Rather than beginning with a complex cognitive architecture, RINGS builds this transition step by step in a small, inspectable SNN. The goal is not to claim that a particular recurrent pattern is already a complete biological self-model. The goal is to test whether mechanisms that are candidates for elementary self-representation produce identifiable changes in neural dynamics and behaviour.
+
+A central hypothesis is that **recurrent attractor-like activity can provide a persistent internal state that is not reducible to the current sensory input alone**. Such a state may integrate sensory, homeostatic and action-related information over time and thereby serve as a minimal substrate for self-related regulation.
+
+## Model progression
+
+The repository preserves a sequence of increasingly complex models. This progression is intentional: simpler models make the contribution of each added mechanism easier to interpret.
+
+1. **Reactive model (R)** — feed-forward stimulus–response control. Sensory inputs directly drive behaviour through fast neural dynamics.
+2. **Chemically modulated model (C)** — adds slow internal modulatory variables representing longer-lived physiological context, while keeping the neural controller feed-forward.
+3. **Recurrent ring models** — introduce recurrent neural populations capable of maintaining structured activity beyond the immediate input.
+4. **Coupled recurrent state (v0.51)** — separates persistent internal state from motor readout and allows the state to evolve continuously while influencing behaviour.
+
+This sequence supports both **mechanistic comparison** and **ablation experiments**. The same environment can therefore be used to ask whether behavioural differences come from slow chemical modulation, recurrent state dynamics, or their interaction.
+
+## Why this project
+
+RINGS is intended as a small computational testbed rather than a performance-maximising agent. Its main value is that the internal mechanisms remain explicit enough to inspect, record, visualise and selectively disable.
+
+The project therefore combines three kinds of analysis:
+
+- **Behavioural performance:** survival time, food collection, danger encounters and related episode statistics.
+- **Mechanistic interventions:** fixed-parameter ablations and matched comparisons between model variants.
+- **Neural dynamics:** recordings, population activity, recurrent-state trajectories and PCA-based visualisation of state-space dynamics.
+
+This makes it possible to study not only **whether** an agent behaves better, but also **what internal dynamical mechanism changed** when the architecture was modified.
+
+The current codebase should be treated as an active research prototype. Model versions are retained because the historical progression itself is useful for understanding how persistent recurrent dynamics emerge from simpler controllers.
 
 ## Documentation scope
 
@@ -37,7 +75,7 @@ These are dependency names, not a tested version lock. Keep a separate environme
 | Script | Purpose |
 | --- | --- |
 | `rings_minigrid_brian_2_prototype51.py` | v0.51.3: coupled recurrent state, separate motor readout, ablations, tune/evaluate/select. |
-| `rings_minigrid_brian_2_prototype32.py` | v0.43.0: recurrent motor rings, tune/evaluate/select. |
+| `rings_minigrid_brian_2_prototype43.py` | v0.43.0: recurrent motor rings, tune/evaluate/select. |
 | `rings_model_R.py` | RC-1.3 reactive feedforward baseline; fast neural transients, no slow chemistry. |
 | `rings_model_C.py` | RC-1.3 feedforward baseline plus slow chemical modulation; no recurrent synapses. |
 | `rings_benchmark.py` | v1.2.1: parallel episodes, aggregate reports and paired multi-model comparison. |
@@ -149,7 +187,7 @@ Keep R/C test scripts beside both R/C model files. They accept no CLI options an
 - Video schema mismatch: use the appropriate recording/model generation, not only a matching filename suffix.
 - Avoid assuming Ctrl-C cleanup behaviour is identical across historical tune scripts and benchmark versions; confirm that workers stopped before starting another large batch.
 
-Do not commit large recordings, generated videos, checkpoints or result directories accidentally. Choose a repository licence explicitly; this README does not grant a licence.
+Do not commit large recordings, generated videos, checkpoints or result directories accidentally. Licensing terms are provided in the repository `LICENSE` file.
 
 ## Complete CLI reference
 

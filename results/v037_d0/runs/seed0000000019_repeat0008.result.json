@@ -1,0 +1,17 @@
+{
+  "env_seed": 19,
+  "repeat": 8,
+  "agent_seed": 2234614370,
+  "status": "ok",
+  "metrics": {
+    "steps": 672,
+    "total_reward": 13.038711999999997,
+    "final_energy": -0.0030400000000005405,
+    "food_collected": 16,
+    "danger_contacts": 0,
+    "rest_steps": 89
+  },
+  "terminated": true,
+  "truncated": false,
+  "wall_seconds": 274.2687352625653
+}

@@ -1,0 +1,71 @@
+{
+  "expected_runs": 1000,
+  "successful_runs": 1000,
+  "failed_runs": 0,
+  "complete_seeds": 100,
+  "inference": "Bootstrap of complete environment-seed means; capped lifetime",
+  "metrics": {
+    "danger_contacts": {
+      "mean_all_successful": 3.834,
+      "mean_complete_seeds": 3.833999999999999,
+      "median_all_successful": 4.0,
+      "sd_all_successful": 1.0851827595486492,
+      "ci95_complete_seeds": [
+        3.7379749999999996,
+        3.9279999999999995
+      ]
+    },
+    "final_energy": {
+      "mean_all_successful": -0.07958159999999981,
+      "mean_complete_seeds": -0.07958159999999981,
+      "median_all_successful": -0.06247999999999987,
+      "sd_all_successful": 0.06572083731890432,
+      "ci95_complete_seeds": [
+        -0.0849689879999998,
+        -0.07408344799999982
+      ]
+    },
+    "food_collected": {
+      "mean_all_successful": 2.117,
+      "mean_complete_seeds": 2.117,
+      "median_all_successful": 1.0,
+      "sd_all_successful": 2.580304045838197,
+      "ci95_complete_seeds": [
+        1.83,
+        2.4329999999999994
+      ]
+    },
+    "rest_steps": {
+      "mean_all_successful": 39.728,
+      "mean_complete_seeds": 39.727999999999994,
+      "median_all_successful": 27.0,
+      "sd_all_successful": 42.66493070792817,
+      "ci95_complete_seeds": [
+        36.540850000000006,
+        43.06524999999999
+      ]
+    },
+    "steps": {
+      "mean_all_successful": 83.396,
+      "mean_complete_seeds": 83.396,
+      "median_all_successful": 60.0,
+      "sd_all_successful": 76.51090839287626,
+      "ci95_complete_seeds": [
+        76.994925,
+        89.96239999999999
+      ]
+    },
+    "total_reward": {
+      "mean_all_successful": -0.37219040319999963,
+      "mean_complete_seeds": -0.3721904031999997,
+      "median_all_successful": -0.8555391999999996,
+      "sd_all_successful": 1.9025017225278384,
+      "ci95_complete_seeds": [
+        -0.5480330982399996,
+        -0.18505113507999962
+      ]
+    }
+  },
+  "censored_runs": 0,
+  "reached_horizon_fraction": 0.0
+}
