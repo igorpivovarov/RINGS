@@ -1,7 +1,7 @@
 """Render measured RINGS v40–v43 / v50–v51 NPZ traces as a synchronized 2D MP4.
 
 No Brian2 simulation or model import. Dependencies: numpy, pillow, imageio,
-imageio-ffmpeg; matplotlib for v50/v51 population/PCA view. Renderer version 3.0.
+imageio-ffmpeg; matplotlib for v50/v51 population/PCA view. Renderer version 3.1.
 PCA is fitted retrospectively to the entire recording, with fixed axes. Python 3.8-compatible. Layout is schematic, not a connectome.
 Each environment snapshot precedes its action; neural time advances within it.
 """
@@ -536,9 +536,102 @@ class PopulationRenderer(Renderer):
         return img
 
 
+class WidePopulationRenderer(PopulationRenderer):
+    """1920x1080 composition with a full-height shared timeline."""
+    width, height = 1920, 1080
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Reuse the measured population/world/PCA panels from the legacy layout.
+        self.width, self.height = 1600, 1400
+        r = self.r
+        self.lanes = [str(n) for n in r.data['receptor_names']] + list(r.names)
+        self.lanes += [n for n in ('SupportLeft','SupportRight','SupportForward','SupportRest') if n in r.columns]
+        self.lanes += list(r.data['motor_names']) + list(r.mods)
+        self.scales = {}
+        for name in self.lanes:
+            if name in r.mods or name in r.data['receptor_names']:
+                self.scales[name] = 1.0
+            else:
+                self.scales[name] = max(1.0, float(r.rows[:,r.columns.index(name)].max()))
+
+    def frame(self, step, part, subframes):
+        r = self.r
+        original = super().frame(step, part, subframes)
+        img = Image.new('RGB',(1920,1080),BG)
+        d = ImageDraw.Draw(img)
+        d.text((18,12),'RINGS / активность сети и фазовая траектория',font=self.heading,fill=TEXT)
+        end = (step+(part+1)/subframes)*r.dt
+        final = part == subframes-1
+        self.text(d,(18,53),'v%s • %s • seed %s • шаг %d/%d • %.0f ms' %
+                  (r.meta.get('agent_version','?'),r.meta.get('ablation','full'),r.meta.get('seed','?'),step,len(r.rows)-1,end),17,MUTED)
+        resample = getattr(Image,'Resampling',Image).LANCZOS
+        img.paste(original.crop((24,106,526,820)).resize((432,614),resample),(16,82))
+        img.paste(original.crop((546,106,1576,460)).resize((820,282),resample),(464,82))
+        img.paste(original.crop((546,480,1576,1190)).resize((820,565),resample),(464,382))
+        # Instantaneous motor readout, followed by chemical concentration bars.
+        rounded_panel(d,(16,710,448,867),12,PANEL)
+        self.text(d,(30,720),'МОТОРЫ • спайки / клетку / окно',17)
+        counts=r.counts('motor',step*r.dt,end)
+        for k,(name,(lo,hi)) in enumerate(zip(r.data['motor_names'],r.data['motor_bounds'])):
+            value=float(counts[lo:hi].mean());y=750+k*27
+            self.text(d,(30,y),str(name).replace('Motor',''),15)
+            d.rectangle((116,y+3,390,y+17),fill=LINE)
+            length=274*min(1,value/max(1,math.ceil(r.dt/3)))
+            if length>0:d.rectangle((116,y+3,116+length,y+17),fill='#68c7ee')
+            self.text(d,(433,y),'%.1f'%value,15,anchor='ra')
+        rounded_panel(d,(16,881,448,1064),12,PANEL)
+        self.text(d,(30,892),'НЕЙРОМОДУЛЯТОРЫ • концентрация 0–1',17)
+        for k,(name,value) in enumerate(zip(r.mods,r.state(end)[1])):
+            y=927+k*32
+            self.text(d,(30,y),str(name).replace('Mod',''),15,MOD_COLORS[k])
+            d.rectangle((126,y+3,385,y+19),fill=LINE)
+            length=259*float(np.clip(value,0,1))
+            if length>0:d.rectangle((126,y+3,126+length,y+19),fill=MOD_COLORS[k])
+            self.text(d,(433,y),'%.2f'%value,15,anchor='ra')
+        rounded_panel(d,(464,963,1284,1064),12,PANEL)
+        self.text(d,(480,975),'PCA: фиксированная проекция всей записи; не карта бассейна притяжения.',17,MUTED)
+        self.text(d,(480,1005),'Справа: входы → состояние → считывание → моторы → химия.',17)
+        self.text(d,(480,1034),'Для каждой строки указана верхняя граница шкалы; шкалы постоянны.',15,MUTED)
+        # All lanes share the same 60-step time axis. Only completed output windows
+        # are plotted; current sensory input is already known before action.
+        rounded_panel(d,(1300,16,1904,1064),12,PANEL)
+        self.text(d,(1316,29),'ОБЩАЯ ИСТОРИЯ • последние 60 шагов',21)
+        self.text(d,(1316,61),'Входы 0–1; выходы сп./клетку; химия 0–1',15,MUTED)
+        x0,x1=1460,1884
+        now=step+(part+1)/subframes
+        left=now-60
+        for offset in (-60,-40,-20,0):
+            x=x0+(offset+60)/60*(x1-x0)
+            d.line((x,91,x,1015),fill=LINE,width=1)
+            self.text(d,(x,1033),str(offset),15,MUTED,anchor='mm')
+        row_h=920/len(self.lanes)
+        for k,name in enumerate(self.lanes):
+            y=94+k*row_h;baseline=y+row_h-5;scale=self.scales[name]
+            sensor=name in r.data['receptor_names']
+            color=('#a6b5cb' if sensor else '#69d5ae' if name in r.names or name.startswith('Support')
+                   else MOD_COLORS[r.mods.index(name)] if name in r.mods else '#68c7ee')
+            self.text(d,(1315,y),name,15,color)
+            self.text(d,(1447,y+14),'%.2g'%scale,15,MUTED,anchor='ra')
+            d.line((x0,baseline,x1,baseline),fill=LINE)
+            samples=[]
+            stop=step+1 if final else step
+            for i in range(max(0,int(left)-1),stop):
+                t=i+1
+                if t>=left:
+                    samples.append((t,float(r.row(i).get(name,0))))
+            if sensor and not final:
+                samples.append((now,float(r.row(step).get(name,0))))
+            points=[(x0+(t-left)/60*(x1-x0),baseline-(row_h-9)*np.clip(v/scale,0,1)) for t,v in samples]
+            if len(points)>1:d.line(points,fill=color,width=2)
+            elif points:
+                x,yv=points[0];d.ellipse((x-1,yv-1,x+1,yv+1),fill=color)
+        return img
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--version', action='version', version='rings_neural_video 3.0')
+    p.add_argument('--version', action='version', version='rings_neural_video 3.1')
     p.add_argument('recording', help='v40–v43 / v50–v51 NPZ created with --record on')
     p.add_argument('--output', required=True, help='New MP4 path')
     p.add_argument('--fps', type=float, default=30)
@@ -577,7 +670,7 @@ def main():
         p.error('Phase tail must be positive and camera angles finite')
     if a.phase_export and (not r.coupled or Path(a.phase_export).exists() or Path(a.phase_export).suffix.lower() != '.npz'):
         p.error('phase-export requires coupled-state data and a new .npz path')
-    renderer = PopulationRenderer(r, a.font, a.phase_tail_ms, a.phase_elev, a.phase_azim) if r.coupled else Renderer(r, a.font)
+    renderer = WidePopulationRenderer(r, a.font, a.phase_tail_ms, a.phase_elev, a.phase_azim) if r.coupled else Renderer(r, a.font)
     if a.phase_export:
         target = Path(a.phase_export)
         target.parent.mkdir(parents=True, exist_ok=True)

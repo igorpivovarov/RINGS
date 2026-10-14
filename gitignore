@@ -7,8 +7,10 @@ __pycache__/
 *.so
 
 # Results & logs
+arxiv/
 results/
 logs/
+video/
 
 # Distribution / packaging
 .Python
